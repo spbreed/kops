@@ -35,14 +35,14 @@ export AWS_PROFILE=name_of_your_profile
 Create a bucket (if you don't already have one) for your cluster state:
 
 ```bash
-aws s3api create-bucket --bucket my-kops-s3-bucket-for-cluster-state --region us-east-1
+aws s3api create-bucket --bucket kr-kops-s3-bucket-for-cluster-state --region us-east-1
 ```
 
 Then export the name of your cluster along with the "S3" URL of your bucket:
 
 ```bash
 export NAME=privatekopscluster.k8s.local
-export KOPS_STATE_STORE=s3://my-kops-s3-bucket-for-cluster-state
+export KOPS_STATE_STORE=s3://kr-kops-s3-bucket-for-cluster-state
 ```
 
 Some things to note from here:

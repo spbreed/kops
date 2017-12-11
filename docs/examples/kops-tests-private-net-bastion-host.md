@@ -21,8 +21,8 @@ Please follow our [basic-requirements document](basic-requirements.md) that is c
 First, using some scripting and assuming you already configured your "aws" environment on your linux system, use the following commands in order to export your AWS access/secret (this will work if you are using the default profile):
 
 ```bash
-export AWS_ACCESS_KEY_ID=`grep aws_access_key_id ~/.aws/credentials|awk '{print $3}'`
-export AWS_SECRET_ACCESS_KEY=`grep aws_secret_access_key ~/.aws/credentials|awk '{print $3}'`
+export AWS_ACCESS_KEY_ID=`grep aws_access_key_id ~/.aws/config|awk '{print $3}'`
+export AWS_SECRET_ACCESS_KEY=`grep aws_secret_access_key ~/.aws/config|awk '{print $3}'`
 echo "$AWS_ACCESS_KEY_ID $AWS_SECRET_ACCESS_KEY"
 ```
 
